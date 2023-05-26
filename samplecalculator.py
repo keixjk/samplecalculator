@@ -12,3 +12,8 @@ def multiply (num1, num2):
 
 def divide (num1, num2):
     return num1 / num2
+
+def calculator():
+        # ask user for operation
+        operation = input("choose an operation (+, -, *, /): ")
+        
