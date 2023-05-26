@@ -20,3 +20,16 @@ def calculator():
         num1 = float(input("enter the first number"))
         # ask user for num2
         num2 = float(input("enter the second number"))
+
+        # perform the input operation and numbers
+        if operation == "+":
+             result = add(num1, num2)
+        elif operation == "-":
+             result = subtract(num1, num2)
+        elif operation == "*":
+             result = multiply(num1, num2)
+        if operation == "/":
+             result = divide(num1, num2)
+        else:
+             print("Invalid operation")
+             return
