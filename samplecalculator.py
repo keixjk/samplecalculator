@@ -36,3 +36,10 @@ def calculator():
         
         # print result
         print("Result:", result)
+
+        # ask user to try again or not
+        choice = input("Do you want to try again? (yes/no): ")
+        if choice.lower() == "yes":
+             calculator()
+        else: 
+            print("Thank you!")
