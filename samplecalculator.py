@@ -14,6 +14,7 @@ def divide (num1, num2):
     return num1 / num2
 
 def calculator():
+    try:
         # ask user for operation
         operation = input("choose an operation (+, -, *, /): ")
         # ask user for num1
@@ -43,3 +44,7 @@ def calculator():
              calculator()
         else: 
             print("Thank you!")
+    # check for value errors
+    except ValueError:
+        print("Invalid input! Please enter valid numbers.")
+        calculator()
