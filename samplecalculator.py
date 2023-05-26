@@ -48,3 +48,7 @@ def calculator():
     except ValueError:
         print("Invalid input! Please enter valid numbers.")
         calculator()
+    # check for zero division error
+    except ZeroDivisionError:
+        print("Error: Cannot divide by zero!")
+        calculator()
